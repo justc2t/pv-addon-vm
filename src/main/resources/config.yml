@@ -1,0 +1,47 @@
+# How long to keep recordings on disk, in minutes
+retention-minutes: 1
+# Maximum recording length in seconds (failsafe)
+max-seconds: 60
+
+source-line:
+  name: voicemessages
+  weight: 50 # Leave default if you don't know what it does
+  default-volume: 1.0 # Default volume of the source-line
+  show: 'VoiceMessages' # The display of the source-line in PlasmoVoice
+
+activation:
+  name: voicemessages
+  permission: voicemessages.activation
+  weight: 50
+  # If you include an icon resource above, set this to the namespaced path. Otherwise leave empty to use PV default.
+  icon: ""
+  show: 'VoiceMessages' # The display of the activation in PlasmoVoice
+# Send voice messages through discord webhook
+discord-integration: false
+discord-webhook:
+  url: DISCORD_WEBHOOK # Leave default if discord-integration set to false
+
+messages:
+  player-not-found: '<red>Player not found/offline.'
+  only-players: 'Only players can use this command!'
+  send-vc: "<green>• <grey>%player%: <hover:show_text:'<green>Click to hear!'><grey>%waveform% (%time%)"
+  no-rec: "<red>Unable to find voice message!"
+  start-listening: '<green>▶ Voice Message'
+  already-listening: '<red>⏹ Already listening'
+  no-plasmovoice: "<red>ℹ You don't have PlasmoVoice to listen to this voice message!"
+  private-message-window-open: '<green>Private voice message window opened for %player%. Speak now!'
+  private-message-window-expired: '<red>Private voice message window expired.'
+  private-message-sending: '<yellow>%player% is recording a private voice message for you...'
+  private-message-received: "<grey>[%sender% -> %player%] <hover:show_text:'<green>Click to hear!'>%waveform% (%time%)"
+  private-message-sent: "<grey>[%sender% -> %player%] <hover:show_text:'<green>Click to hear!'>%waveform% (%time%)"
+  went-offline: '<red>Recipient went offline, message discarded.'
+  # The waveform visualized message, first = lowest, last = highest
+  waveform-levels:
+    - '▁'
+    - '▂'
+    - '▃'
+    - '▄'
+    - '▅'
+    - '▆'
+    - '▇'
+    - '█'
