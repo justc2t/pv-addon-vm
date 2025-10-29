@@ -2,7 +2,7 @@ VoiceMessages
 
 This is an alternative server-side plugin to the existing VoiceMessages mod available on Simple Voice Chat.
 
-This mod requires [PlasmoVoice](https://modrinth.com/plugin/plasmo-voice).
+This plugin requires [PlasmoVoice](https://modrinth.com/plugin/plasmo-voice).
 
 ## How the plugin works:
 
