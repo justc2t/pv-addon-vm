@@ -4,9 +4,6 @@ This is an alternative server-side plugin to the existing VoiceMessages mod avai
 
 This mod requires [PlasmoVoice](https://modrinth.com/plugin/plasmo-voice).
 
-## Example usage
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Wu9VgOCbyl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## How the plugin works:
 
 # Global messages
