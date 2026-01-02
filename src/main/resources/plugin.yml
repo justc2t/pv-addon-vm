@@ -1,9 +1,9 @@
 name: VoiceMessages
 main: org.justc2t.voiceMessages.VoiceMessages
-version: "1.0.0"
+version: "1.1.0"
 description: "Record short voice messages via Plasmo Voice activations and play them globally"
 author: Just_c2t
-api-version: "1.21"
+api-version: "1.21.11"
 folia-supported: true
 depend:
   - PlasmoVoice
@@ -25,3 +25,5 @@ permissions:
     default: true
   voicemessages.private:
     default: true
+  voicemessages.ban:
+    default: op

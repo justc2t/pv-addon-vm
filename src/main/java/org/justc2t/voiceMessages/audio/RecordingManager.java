@@ -37,9 +37,6 @@ public final class RecordingManager {
     private final Map<UUID, UUID> privateSessions = new ConcurrentHashMap<>();
     private final Map<String, Recording> recordings = new ConcurrentHashMap<>();
 
-
-
-
     public RecordingManager(VoiceMessages plugin, SchedulerAdapter scheduler) {
         this.plugin = plugin;
         this.scheduler = scheduler;

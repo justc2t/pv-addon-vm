@@ -69,6 +69,7 @@ public final class VoiceMessagesAddon implements AddonInitializer {
         activation.onPlayerActivationStart(player -> {
             if (recordingManager == null) return;
             Optional<Player> bp = resolveBukkit(player);
+            if(!bp.get().hasPermission(aPerm)) return;
             bp.ifPresent(recordingManager::beginRecording);
         });
         activation.onPlayerActivation((player, packet) -> {

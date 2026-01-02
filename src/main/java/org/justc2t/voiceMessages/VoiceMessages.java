@@ -36,7 +36,6 @@ public void onEnable() {
     discordsrv = getConfig().getBoolean("discord-integration", false);
     getCommand("recording").setExecutor(this);
     getCommand("voicemessage").setExecutor(this); // NEW
-
     getLogger().info("VoiceMessages enabled");
 }
 
@@ -84,5 +83,5 @@ public void onEnable() {
         if (recordingManager != null) recordingManager.shutdown();
     }
 
-    public boolean isDiscordsrv() {return discordsrv; }
+    public boolean isDiscordsrv() { return discordsrv; }
 }
