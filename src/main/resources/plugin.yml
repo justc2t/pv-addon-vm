@@ -3,7 +3,7 @@ main: org.justc2t.voiceMessages.VoiceMessages
 version: "1.1.0"
 description: "Record short voice messages via Plasmo Voice activations and play them globally"
 author: Just_c2t
-api-version: "1.21.11"
+api-version: "1.21"
 folia-supported: true
 depend:
   - PlasmoVoice
